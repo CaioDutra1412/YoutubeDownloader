@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download de Vídeo e Áudio do YouTube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Downloader</h1>
+        
+        <!-- Campo para o link do vídeo -->
+        <label for="videoUrl">Link do Vídeo:</label>
+        <input type="text" id="videoUrl" placeholder="Cole o link do vídeo aqui" required>
+
+        <div class="options">
+            <!-- Opções para escolher o tipo de download -->
+            <label>
+                <input type="radio" name="downloadType" value="mp3" checked> Áudio (MP3)
+            </label>
+            <label>
+                <input type="radio" name="downloadType" value="mp4"> Vídeo (MP4)
+            </label>
+        </div>
+
+        <!-- Botão para iniciar o download -->
+        <button id="startDownload">Iniciar Download</button>
+
+        <!-- Barra de progresso -->
+        <div class="progress">
+            <div id="progressBar" class="progress-bar"></div>
+        </div>
+
+        <!-- Mensagem de progresso -->
+        <p id="progressMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
